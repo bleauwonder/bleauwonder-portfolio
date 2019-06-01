@@ -11,7 +11,9 @@
 <body>
         <header id="masthead">
             <div class="container">
-            <a href="index.html" id="logo">Elyza Bleau</a>
+            <a href="index.html" id="logo">Elyza Bleau
+                <img id="gif" src="./assets/animat-camp/campfire/animat-campfire.gif" alt="campfire gif" height="90px">
+            </a>
                 <nav>
                     <a href="about.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
@@ -22,13 +24,61 @@
 
         <div id="main-container" class="container">
                 <section class="main-section">
-                    <h1>A Thing of Beauty</h1>
-                        <img class="auth-image" src="./assets/images/Palm_double.JPG" alt="double exposure palm trees">
-                        <br>
-                        <p>Websites made from scratch...with love.</p>
+                    <div class="panels">
+                        <div class="panel panel1">
+                            <p>I</p>
+                            <p>Love</p>
+                            <a href="https://bleauwonder.github.io/Giphy-Time/" target="_blank">📺</a>
+                            <p>Sitcoms</p>
+                            
+                          </div>
+                        <div class="panel panel2">
+                          <p>Word</p>
+                          <p>The</p>
+                          <a href="https://bleauwonder.github.io/Word-Guess" target="_blank">👽</a>
+                          <p>Guess</p>
+                        
+                        </div>
+                        <div class="panel panel3">
+                          <p>Makin'</p>
+                          <p>Hot</p>
+                          <a href="https://bleauwonder.github.io/unit-4-game" target="_blank">🌶</a>
+                          <p>Sauce</p>
+                          
+                        </div>
+                        <div class="panel panel4">
+                          <p>It's</p>
+                          <p>Sun</p>
+                          <a href="https://bleauwonder.github.io/TriviaGame/" target="_blank">🎸</a>
+                          <p>Records</p>
+                        </div>
+                        <div class="panel panel5">
+                          <p>A</p>
+                          <p>Life</p>
+                          <p>☀️</p>
+                          <p>Loved</p>
+                        </div>
+                      </div>
                 </section>
         </div>
-
+    <script>
+        const panels = document.querySelectorAll('.panel');
+        
+        function toggleOpen() {
+            console.log('Hello');
+            this.classList.toggle('open');
+        }
+        
+        function toggleActive(e) {
+            console.log(e.propertyName);
+            if (e.propertyName.includes('flex')) {
+            this.classList.toggle('open-active');
+            }
+        }
+        
+        panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+        panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+        </script>
 </body>
 
     <footer class="footer">

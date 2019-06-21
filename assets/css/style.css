@@ -195,7 +195,7 @@ body {
     opacity: 0.7;
   }
   
-  .work h3 {
+  /* .work h3 {
     position: absolute;
     bottom: 35px;
     width: 100%;
@@ -208,7 +208,7 @@ body {
     background: #0e46ad;
     border-bottom: 0;
   }
-  
+   */
   .auth-image {
     float: left;
     width: 400px;
@@ -230,6 +230,8 @@ body {
     font-family: 'Shadows Into Light Two', cursive;
     padding: 12px 14px;
     border: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
     border-radius: 15px;
   }
@@ -246,13 +248,18 @@ body {
     font-family: 'Shadows Into Light Two', cursive;
     padding: 12px 14px;
     border: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
     border-radius: 15px;
   }
-  .container .btn:hover {
+
+  .work .btn:hover {
     background-color: #0b337e;;
   }
-  
+  .work .btn2:hover {
+    background-color: #0b337e;;
+  }
   /* contact page */
   
   #contact-form ul {

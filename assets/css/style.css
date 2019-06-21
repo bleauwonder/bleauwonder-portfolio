@@ -228,14 +228,29 @@ body {
     color: #7d97be;
     font-size: 16px;
     font-family: 'Shadows Into Light Two', cursive;
-    padding: 12px 24px;
+    padding: 12px 14px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
+  .work .btn2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: #0e46ad;
+    color: #7d97be;
+    font-size: 16px;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding: 12px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
   .container .btn:hover {
-    background-color: black;
+    background-color: #0b337e;;
   }
   
   /* contact page */

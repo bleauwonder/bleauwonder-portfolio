@@ -40,7 +40,7 @@ body {
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #0854e0;
+    color: #0e46ad;
     text-shadow: 1px 1px 2px #525151;
     box-shadow: #8c8c94;
   }
@@ -57,8 +57,12 @@ body {
   h3 {
     font-size: 22px;
     font-family: 'Shadows Into Light Two', cursive;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
   }
-  
+
   /* header */
   
   #masthead {
@@ -69,7 +73,7 @@ body {
     overflow: auto;
     color:  #bac7db;
     background-color: #797981;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #999;
   }
   
   #logo {
@@ -81,7 +85,7 @@ body {
     font-size: 35px;
     font-weight: 700;
     line-height: 90px;
-    color:  #bac7db;
+    color:  #7d97be;
     text-align: center;
     text-shadow: 2px 2px 4px #363636;
     text-decoration: none;
@@ -112,23 +116,45 @@ body {
   /* footer */
   
   footer {
+    display: flex;
     padding: 30px 0;
     clear: both;
-    font-size: 12px;
-    color: #ffffff;
-    color: #cccccc;
-    text-align: center;
+    font-size: 15px;
+    color: #999;
+    color: #999;
+    /* text-align: center; */
     background-color: #797981;
-    border-top: 8px solid #1c62e4;
+    border-top: 2px solid #999;
     box-shadow: 10px 0px black;
     height: 20px;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
   }
   
-  h3, h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eeeeee;
+  .icon {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+
+  }
+
+  .icon a:visited .fab {
+    color: #999;
+  }
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    display: flex;
+    margin: 0px;
+    line-height: 15px;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   /* main */
@@ -156,7 +182,6 @@ body {
     width: 240px;
     margin: 20px 25px 10px 25px;
     overflow: auto;
-   
   }
   
   .work:nth-child(even) {
@@ -180,7 +205,7 @@ body {
     line-height: 30px;
     color:  #bac7db;
     text-align: center;
-    background: #0854e0;
+    background: #0e46ad;
     border-bottom: 0;
   }
   
@@ -191,6 +216,26 @@ body {
     margin-top: 10px;
     margin-right: 25px;
     box-shadow: 10px 10px 5px rgb(105, 104, 104); 
+  }
+
+  .work .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: #0e46ad;
+    color: #7d97be;
+    font-size: 16px;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
   }
   
   /* contact page */
@@ -251,7 +296,6 @@ body {
         max-width: 200px;
     }
 }
-
 
 .panels {
   min-height: 100vh;

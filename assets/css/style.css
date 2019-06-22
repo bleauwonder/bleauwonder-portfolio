@@ -136,8 +136,8 @@ body {
     font-size: 30px;
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
-
+    justify-content: space-around;
+    width: 10%;
   }
 
   .icon a:visited .fab {

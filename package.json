@@ -1,7 +1,7 @@
 {
   "name": "bleauwonder.github.io",
   "version": "1.0.0",
-  "description": "Elyza Bleau's personal github pages responsive website with a portfolio of current projects!",
+  "description": "Elyza Bleau's responsive portfolio website",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -389,13 +389,13 @@ a:link {
 }
 
 /* Submit button on Contact */
-.btn {
+.sub-btn {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
   border: 2px solid #0e46ad;
   border-radius: 0.6em;
-  color: #0e46ad;
+  color: #0e46ad;;
   cursor: pointer;
   display: flex;
   align-self: center;
@@ -411,18 +411,12 @@ a:link {
   font-weight: 700;
 }
 
-  .btn:hover
+  .sub-btn:hover
    {
     color: rgb(82, 168, 238);
     outline: 0;
   }
 
-.third {
-  border-color: #0e46ad;
-  color: #0e46ad;
-  box-shadow: 0 0 40px 40px #0e46ad inset, 0 0 0 0 #0e46ad;
-  transition: all 150ms ease-in-out;
-}
-  .btn:hover {
+  .sub-btn:hover {
     box-shadow: 0 0 10px 0 #5f8fe9 inset, 0 0 10px 4px #0e46ad;
   }

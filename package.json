@@ -1,0 +1,24 @@
+{
+  "name": "bleauwonder.github.io",
+  "version": "1.0.0",
+  "description": "Elyza Bleau's personal github pages responsive website with a portfolio of current projects!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bleauwonder/bleauwonder.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bleauwonder/bleauwonder.github.io/issues"
+  },
+  "homepage": "https://github.com/bleauwonder/bleauwonder.github.io#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  }
+}

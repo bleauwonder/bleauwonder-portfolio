@@ -1,6 +1,7 @@
 # Elyza Bleau's Development Portfolio
 
-### Elyza Bleau's portfolio of current projects!
+### Elyza Bleau's portfolio of current projects! 
+#### Hosted on Heroku: https://elyzableau.herokuapp.com/
 
 ### See the Index Page in action:
 ![CSS Panels on Index page](./app/public/images/portfolio-index.gif)

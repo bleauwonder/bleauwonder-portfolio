@@ -1,3 +1,4 @@
+// For Contact Page soon
 // var contact = require("../data/contact");
 
 // routing the apiRoutes

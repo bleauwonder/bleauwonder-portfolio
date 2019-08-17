@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
     clear: both;
   }
+
+  #main-container {
+    border: 3px solid pink;
+  }
   
   h1,
   h2,
@@ -64,15 +68,30 @@ body {
 
   /* header */
   
-  #masthead {
+  /* #masthead {
     position: fixed;
+    overflow: auto;
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
-    overflow: auto;
     color:  #bac7db;
     background-color: #e6e6ec;
     border-bottom: 2px solid #999;
+    padding: 10px;
+  } */
+
+  #masthead-flex {
+    display: flex;
+    position: fixed;
+    overflow: auto;
+    /* z-index: 99; */
+    width: 100%;
+    margin: 0 0 30px;
+    color:  #bac7db;
+    background-color: #e6e6ec;
+    border-bottom: 2px solid #999;
+    padding: 10px;
+    justify-content: space-between;
   }
   
   #logo {
@@ -143,6 +162,7 @@ body {
   }
 
   .footerText {
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -156,20 +176,19 @@ body {
   }
   
   /* main */
-  
-  #main-container {
-    padding-top: 130px;
-    min-height: calc(100vh - 70px);
-  }
-  
+
   .main-section {
-    float: left;
-    width: 100%;
+    /* add overflow hidden to make div expand to child elements*/
+    overflow: hidden;
+    /* float: left;
+    width: 100%; questionable */
     max-width: 960px;
     padding: 30px;
     margin: 0 0 40px;
     background-color: #f6f6fa;
     box-shadow: 10px 10px 10px rgb(134, 132, 132);
+    padding-top: 130px;
+    /* min-height: calc(100vh - 70px); */
   }
   
   /* portfolio page */
@@ -204,7 +223,7 @@ body {
     box-shadow: 10px 10px 5px rgb(105, 104, 104); 
   }
 
-  .work .btn {
+  /* .work .btn {
     position: absolute;
     top: 100%;
     left: 50%;
@@ -220,8 +239,8 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
+  } */
+/*   
   .work .btn2 {
     position: absolute;
     top: 100%;
@@ -238,7 +257,7 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     border-radius: 5px;
-  }
+  } */
 
   .tech {
     display: flex;
@@ -250,12 +269,12 @@ body {
     font-size: 10px;
   }
 
-  .work .btn:hover {
+  /* .work .btn:hover {
     background-color: #0b337e;;
   }
   .work .btn2:hover {
     background-color: #0b337e;;
-  }
+  } */
 
   .button-group {
     display: flex;
@@ -320,6 +339,32 @@ body {
     .auth-image {
         max-width: 200px;
     }
+}
+
+@media only screen and (max-width: 375px) {
+  #logo {
+    font-size: 15px;
+    height: 70px;
+    width: 200px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #gif {
+    height: 70px;
+  }
+  .work img {
+    height: 25%;
+    border: 0 none;
+    opacity: 0.7;
+  }
+  .button-group {
+    top: 30%;
+  }
+  .tech {
+    top: 60%;
+  }
 }
 
 /* Index Page Panels */

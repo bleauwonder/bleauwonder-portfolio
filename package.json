@@ -20,7 +20,7 @@
   "dependencies": {
     "dotenv": "^8.1.0",
     "eslint": "^6.2.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "minimist": "^1.2.5"
   }
 }
